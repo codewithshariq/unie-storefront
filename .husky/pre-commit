@@ -1,0 +1,12 @@
+set -e
+
+BLUE=$(tput setaf 4)
+GREEN=$(tput setaf 2)
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
+
+echo "${BLUE}${BOLD}### RUNNING PRE-COMMIT CHECKS...###${RESET}"
+
+yarn lint-staged
+
+echo "${GREEN}${BOLD}### PRE-COMMIT CHECKS COMPLETE ###${RESET}"
