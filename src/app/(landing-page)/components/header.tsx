@@ -3,9 +3,9 @@ import React from "react";
 import PoweredByLogo from "@/assets/logos/poweredby-brown-500.png";
 import NameOnlyLogo from "@/assets/logos/logo-brown-500.png";
 import Image from "next/image";
-import SearchIcon from "@/assets/icons/tabler-icon-search.svg";
-import UserIcon from "@/assets/icons/tabler-icon-user.svg";
-import CartIcon from "@/assets/icons/tabler-icon-shopping-cart.svg";
+// import SearchIcon from "@/assets/icons/tabler-icon-search.svg";
+// import UserIcon from "@/assets/icons/tabler-icon-user.svg";
+// import CartIcon from "@/assets/icons/tabler-icon-shopping-cart.svg";
 
 export default function Header() {
   return (
@@ -21,9 +21,9 @@ export default function Header() {
           <Link href="#">About</Link>
         </div>
         <div className="inline-flex items-center gap-4">
-          <SearchIcon className="w-4 h-4 cursor-pointer" />
-          <UserIcon className="w-4 h-4 cursor-pointer" />
-          <CartIcon className="w-4 h-4 cursor-pointer" />
+          {/* <SearchIcon className="w-4 h-4 cursor-pointer" /> */}
+          {/* <UserIcon className="w-4 h-4 cursor-pointer" /> */}
+          {/* <CartIcon className="w-4 h-4 cursor-pointer" /> */}
         </div>
       </nav>
     </header>
