@@ -9,6 +9,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        spaceGrotesk: ["var(--font-space-grotesk)"],
+        spaceMono: ["var(--font-space-mono)"],
+        mortendExtrabold: ["var(--font-mortend-extrabold)"],
+        mortendExtraboldOutline: ["var(--font-mortend-extrabold-outline)"],
+        mortendLight: ["var(--font-mortend-light)"],
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
