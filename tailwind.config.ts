@@ -17,6 +17,31 @@ export default {
         mortendLight: ["var(--font-mortend-light)"],
       },
       colors: {
+        brown: {
+          500: "var(--brown-500)",
+        },
+        black: {
+          700: "var(--black-700)",
+          500: "var(--black-500)",
+          300: "var(--black-300)",
+        },
+        white: {
+          500: "var(--white-500)",
+          100: "var(--white-100)",
+        },
+        teal: {
+          700: "var(--teal-700)",
+          500: "var(--teal-500)",
+        },
+        green: {
+          500: "var(--green-500)",
+        },
+        error: {
+          DEFAULT: "var(--error)",
+        },
+        warning: {
+          DEFAULT: "var(--warning)",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

@@ -8,6 +8,17 @@ body {
 
 @layer base {
   :root {
+    --brown-500: #b4a08e;
+    --black-700: #1e1e1e;
+    --black-500: #262627;
+    --black-300: #7b7a78;
+    --white-500: #f8f6f4;
+    --white-100: #ffffff;
+    --teal-700: #456f7e;
+    --teal-500: #859fa8;
+    --green-500: #c4d99e;
+    --error: #ff3b30;
+    --warning: #fce240;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
