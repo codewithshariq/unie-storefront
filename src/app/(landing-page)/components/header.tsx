@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="flex px-8 mt-10">
+    <header className="flex px-8 pt-10 bg-black-700 bg-[url('/images/container-bg.png')] bg-repeat bg-blend-soft-light">
       <nav className="flex flex-1 items-center pt-4 pb-6 justify-between">
         <Link href="/">
           <Image src={NameOnlyLogo} alt="logo" width={96} height={24} />
