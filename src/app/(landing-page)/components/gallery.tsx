@@ -1,17 +1,5 @@
 import Image from "next/image";
 
-const images = [
-  "/images/astronaut.png",
-  "/images/benhunt-cyborg.png",
-  "/images/benhunt-futuristic-player.png",
-
-  "/images/tatooed-man.png",
-  "/images/three-girls.png",
-  "/images/benhunt-futuristic-player-2.png",
-  "/images/dr-hunt-hyperrealistic-astronaut.png",
-  "/images/green-man.png",
-];
-
 export default function Gallery() {
   return (
     <div className="w-screen bg-black-700 bg-[url('/images/container-bg.png')] bg-repeat bg-blend-soft-light">

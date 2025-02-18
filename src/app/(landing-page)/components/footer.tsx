@@ -96,9 +96,7 @@ export default function Footer() {
             className="w-60 h-16 ml-20"
           />
           <div>
-            <p className="uppercase font-bold text-base font-mortendBold text-brown-600 pl-4">
-              // Site Map
-            </p>
+            <p className="uppercase font-bold text-base font-mortendBold text-brown-600 pl-4"></p>
             <ul className="max-w-md grid grid-cols-2 gap-2 text-slate-50 list-none">
               {links.map((link, index) => (
                 <li key={index}>
