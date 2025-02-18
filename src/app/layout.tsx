@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceMono.className} ${spaceGrotesk.variable} ${mortendLight.variable} ${mortendExtrabold.variable} ${mortendExtraboldOutline.variable} antialiased`}
+        className={`${spaceMono.className} ${spaceGrotesk.variable} ${mortendLight.variable} ${mortendExtrabold.variable} ${mortendExtraboldOutline.variable} antialiased blended-container`}
       >
         {children}
       </body>

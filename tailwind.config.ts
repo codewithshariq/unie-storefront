@@ -19,6 +19,7 @@ export default {
       colors: {
         brown: {
           500: "var(--brown-500)",
+          300: "var(--brown-300)",
         },
         black: {
           700: "var(--black-700)",
