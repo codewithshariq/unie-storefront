@@ -2,6 +2,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import styels from "./page.module.css";
 import { cn } from "@/lib/utils";
+import Gallery from "./components/gallery";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       )}
     >
       <Header />
+      <Gallery />
       <Footer />
     </div>
   );

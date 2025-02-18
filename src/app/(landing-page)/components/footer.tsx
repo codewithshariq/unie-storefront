@@ -50,7 +50,7 @@ const social_handles = [
 
 export default function Footer() {
   return (
-    <footer className="h-80 w-screen absolute bottom-0 overflow-hidden bg-black-700  bg-[url('/images/container-bg.png')] bg-repeat bg-blend-soft-light">
+    <footer className="h-80 w-screen overflow-hidden bg-black-700  bg-[url('/images/container-bg.png')] bg-repeat bg-blend-soft-light">
       <div className="flex w-full h-full">
         {/* Left Section - Image grid */}
         <div className="relative w-3/5 flex items-center -mr-16 overflow-hidden z-10">
