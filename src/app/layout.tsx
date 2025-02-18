@@ -3,6 +3,11 @@ import { Space_Grotesk, Space_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
+const mortendBold = localFont({
+  src: "../assets/fonts/Mortend-bold.otf",
+  variable: "--font-mortend-bold",
+});
+
 const mortendExtrabold = localFont({
   src: "../assets/fonts/Mortend-Extrabold.otf",
   variable: "--font-mortend-extrabold",
@@ -41,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceMono.className} ${spaceGrotesk.variable} ${mortendLight.variable} ${mortendExtrabold.variable} ${mortendExtraboldOutline.variable} antialiased`}
+        className={`${spaceMono.className} ${spaceGrotesk.variable} ${mortendLight.variable} ${mortendExtrabold.variable} ${mortendExtraboldOutline.variable} ${mortendBold.variable} antialiased`}
       >
         {children}
       </body>
