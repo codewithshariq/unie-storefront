@@ -1,4 +1,5 @@
 import Header from "./components/header";
+import Footer from "./components/footer";
 import styels from "./page.module.css";
 import { cn } from "@/lib/utils";
 
@@ -11,6 +12,7 @@ export default function Home() {
       )}
     >
       <Header />
+      <Footer />
     </div>
   );
 }

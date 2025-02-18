@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         spaceGrotesk: ["var(--font-space-grotesk)"],
         spaceMono: ["var(--font-space-mono)"],
+        mortendBold: ["var(--font-mortend-bold)"],
         mortendExtrabold: ["var(--font-mortend-extrabold)"],
         mortendExtraboldOutline: ["var(--font-mortend-extrabold-outline)"],
         mortendLight: ["var(--font-mortend-light)"],
@@ -19,6 +20,7 @@ export default {
       colors: {
         brown: {
           500: "var(--brown-500)",
+          600: "var(--brown-600)",
         },
         black: {
           700: "var(--black-700)",
