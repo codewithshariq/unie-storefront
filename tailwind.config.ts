@@ -21,6 +21,7 @@ export default {
         brown: {
           500: "var(--brown-500)",
           600: "var(--brown-600)",
+          300: "var(--brown-300)",
         },
         black: {
           700: "var(--black-700)",
