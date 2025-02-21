@@ -90,3 +90,35 @@ body {
   background-blend-mode: soft-light;
   background-color: var(--black-700);
 }
+
+.terminal-effect .word {
+  white-space: nowrap;
+}
+
+.terminal-effect .char {
+  position: relative;
+}
+
+.terminal-effect {
+  font-kerning: none;
+  position: relative;
+  /* white-space: nowrap; */
+}
+
+.terminal-effect--cursor-square .char {
+  --opa: 0;
+}
+
+.terminal-effect--cursor-square .char::after {
+  content: "";
+  width: 1ch;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: var(--opa);
+}
+
+.terminal-effect--cursor-square .char::after {
+  background: currentColor;
+  height: 100%;
+}
