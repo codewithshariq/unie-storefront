@@ -9,6 +9,7 @@ body {
 @layer base {
   :root {
     --brown-500: #b4a08e;
+    --brown-400: #b5a99a;
     --black-700: #1e1e1e;
     --black-500: #262627;
     --black-300: #7b7a78;
@@ -121,4 +122,8 @@ body {
 .terminal-effect--cursor-square .char::after {
   background: currentColor;
   height: 100%;
+}
+
+.rhomboid {
+  clip-path: polygon(0% 53px, 100% 53px, 68% 399px, 0% 399px);
 }
