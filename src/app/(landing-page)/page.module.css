@@ -1,8 +1,0 @@
-.container {
-  background-image: url("/container-bg.png");
-  background-size: 25%;
-  background-repeat: repeat;
-  background-position: 0% 0%;
-  background-blend-mode: soft-light;
-  background-color: var(--black-700);
-}

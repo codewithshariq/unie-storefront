@@ -4,17 +4,17 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const mortendExtrabold = localFont({
-  src: "../assets/fonts/Mortend-Extrabold.otf",
+  src: "../../public/fonts/Mortend-Extrabold.otf",
   variable: "--font-mortend-extrabold",
 });
 
 const mortendExtraboldOutline = localFont({
-  src: "../assets/fonts/Mortend-ExtraboldOutline.otf",
+  src: "../../public/fonts/Mortend-ExtraboldOutline.otf",
   variable: "--font-mortend-extrabold-outline",
 });
 
 const mortendLight = localFont({
-  src: "../assets/fonts/Mortend-Light.otf",
+  src: "../../public/fonts/Mortend-Light.otf",
   variable: "--font-mortend-light",
 });
 
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceMono.className} ${spaceGrotesk.variable} ${mortendLight.variable} ${mortendExtrabold.variable} ${mortendExtraboldOutline.variable} antialiased`}
+        className={`${spaceMono.className} ${spaceGrotesk.variable} ${mortendLight.variable} ${mortendExtrabold.variable} ${mortendExtraboldOutline.variable} antialiased blended-background`}
       >
         {children}
       </body>
