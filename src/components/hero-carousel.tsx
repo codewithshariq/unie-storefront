@@ -103,7 +103,7 @@ const HeroCarousel: React.FC<PropType> = (props) => {
                   playsInline
                   muted
                   loop
-                  preload="none"
+                  preload="metadata"
                 >
                   <source src="/unie-intro.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
