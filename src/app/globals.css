@@ -127,3 +127,36 @@ body {
 .rhomboid {
   clip-path: polygon(0% 53px, 100% 53px, 68% 399px, 0% 399px);
 }
+
+.embla {
+  max-width: 1280px;
+  margin: auto;
+  --slide-height: 608px;
+  --slide-spacing: 0px;
+  --slide-size: 95%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+.embla__slide__number {
+  mix-blend-mode: screen;
+  transform-origin: top center;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--slide-height);
+  user-select: none;
+}

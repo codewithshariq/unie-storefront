@@ -60,7 +60,7 @@ export default function Footer() {
         {FOOTER_IMAGES_PATH.map((path, index) => (
           <div
             key={index}
-            className="relative flex flex-shrink-0 h-[213px] w-[178px] rounded-md overflow-hidden"
+            className="relative flex flex-shrink-0 h-[213px] w-[178px] rounded-lg overflow-hidden"
           >
             <Image
               src={path}
