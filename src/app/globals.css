@@ -133,7 +133,7 @@ body {
   margin: auto;
   --slide-height: 608px;
   --slide-spacing: 0px;
-  --slide-size: 92.1875%;
+  --slide-size: 95%;
 }
 .embla__viewport {
   overflow: hidden;
@@ -159,4 +159,13 @@ body {
   justify-content: center;
   height: var(--slide-height);
   user-select: none;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
