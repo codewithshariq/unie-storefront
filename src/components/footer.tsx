@@ -4,7 +4,7 @@ import FacebookIcon from "@/public/icons/tabler-icon-brand-facebook.svg";
 import InstagramIcon from "@/public/icons/tabler-icon-brand-instagram.svg";
 import DiscordIcon from "@/public/icons/tabler-icon-brand-discord.svg";
 import LinkedinIcon from "@/public/icons/tabler-icon-brand-linkedin.svg";
-import LogoBrown from "@/public/logos/logo-brown.svg?url";
+import LogoBrown from "@/public/logos/logo-brown.svg";
 import Link from "next/link";
 
 export default function Footer() {
@@ -67,12 +67,13 @@ export default function Footer() {
               alt={`Footer Image ${index}`}
               fill
               className="absolute object-cover"
+              sizes="13.90vw"
             />
           </div>
         ))}
       </div>
       <div className="absolute right-0 flex items-center justify-center gap-x-[42px]">
-        <Image src={LogoBrown} alt="Logo Brown" width={235} height={60} />
+        <LogoBrown className="w-[235px] h-[60px]" />
         <div className="flex flex-col">
           <p className="text-brown-400 uppercase font-bold font-mortendLight text-base leading-[135%] tracking-[0.32px] mb-[5px]">
             {"// Site Map"}

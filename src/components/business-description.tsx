@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import Globe from "@/public/icons/globe.svg?url";
-import Image from "next/image";
+import Globe from "@/public/icons/globe.svg";
 import { TextAnimator } from "@/animations/text-animator";
 
 export default function BusinessDescription() {
@@ -41,13 +40,7 @@ export default function BusinessDescription() {
     <div className="flex flex-col w-full border border-brown-500 max-w-[989px]">
       <div className="flex">
         <div className="felx flex-shrink-0 items-center justify-center py-11 px-[1.125rem] border-r border-brown-500">
-          <Image
-            src={Globe}
-            alt="Globe"
-            width={80}
-            height={80}
-            className="animate-[spin_3s_linear_infinite] select-none"
-          />
+          <Globe className="w-20 h-20 animate-[spin_3s_linear_infinite] select-none" />
         </div>
         <p
           ref={paragraphRef}

@@ -72,7 +72,7 @@ export const UniformCarousel = () => {
         <div className={cn(styles.embla__container)}>
           {IMAGES.map((src, index) => (
             <div key={index} className={cn(styles.embla__slide)}>
-              <Image src={src} alt="Your alt text" fill />
+              <Image src={src} alt={`Uniform ${index}`} fill sizes="28.28vw" />
             </div>
           ))}
         </div>
