@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Space_Mono } from "next/font/google";
 import localFont from "next/font/local";
-import "swiper/css";
-import "swiper/swiper-bundle.css";
 import "./globals.css";
 
 const mortendExtrabold = localFont({
