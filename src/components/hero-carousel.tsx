@@ -9,17 +9,15 @@ import useEmblaCarousel from "embla-carousel-react";
 
 const TWEEN_FACTOR_BASE = 0.03;
 
+const OPTIONS: EmblaOptionsType = { loop: true };
+const SLIDE_COUNT = 3;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
 const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
-type PropType = {
-  slides: number[];
-  options?: EmblaOptionsType;
-};
-
-const HeroCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props;
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+const HeroCarousel = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
 
@@ -93,7 +91,7 @@ const HeroCarousel: React.FC<PropType> = (props) => {
     <div className="embla w-full">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {SLIDES.map((index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number overflow-hidden">
                 <video

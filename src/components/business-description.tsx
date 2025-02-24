@@ -46,7 +46,7 @@ export default function BusinessDescription() {
             alt="Globe"
             width={80}
             height={80}
-            className="animate-[spin_3s_linear_infinite] "
+            className="animate-[spin_3s_linear_infinite] select-none"
           />
         </div>
         <p

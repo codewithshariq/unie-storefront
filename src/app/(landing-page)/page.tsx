@@ -3,17 +3,16 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import HeroCarousel from "@/components/hero-carousel";
 import { Button } from "@/components/ui/button";
-import { EmblaOptionsType } from "embla-carousel";
-
-const OPTIONS: EmblaOptionsType = { loop: true };
-const SLIDE_COUNT = 3;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+import {
+  UniformCarousel,
+  UniformCarouselWrapper,
+} from "@/components/uniform-carousel";
 
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col min-h-screen max-w-screen-xl mx-auto blended-background">
       <Header />
-      <HeroCarousel slides={SLIDES} options={OPTIONS} />
+      <HeroCarousel />
       <div className="w-full mx-8 mt-4 flex flex-col gap-[25px] self-center max-w-[1216px]">
         <div className="flex w-full items-center">
           <h2 className="flex-1 font-mortendLight font-bold text-[3rem] text-brown-400 uppercase leading-[135%] tracking-[0.96px]">{`//A Whole New Unie-verse`}</h2>
@@ -27,6 +26,9 @@ export default function Home() {
         </div>
         <Button className="max-w-max">THIS IS A BUTTON</Button>
       </div>
+      <UniformCarouselWrapper>
+        <UniformCarousel />
+      </UniformCarouselWrapper>
       <div className="flex flex-col my-[133px] items-center justify-center">
         <BusinessDescription />
       </div>

@@ -37,6 +37,9 @@ export default {
         green: {
           500: "var(--green-500)",
         },
+        gray: {
+          200: "var(--gray-200)",
+        },
         error: {
           DEFAULT: "var(--error)",
         },
