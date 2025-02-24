@@ -20,8 +20,8 @@
 .embla__slide {
   position: relative;
   transition:
-    width 0.5s ease-in-out,
-    height 0.5s ease-in-out;
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out;
   transform-origin: bottom center;
   transform: translate3d(0, 0, 0);
   border: 1px solid var(--brown-400);
@@ -30,7 +30,6 @@
   min-width: 0;
   margin-left: var(--slide-spacing);
   align-items: flex-end;
-  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   border-radius: 1.8rem;
   display: flex;
   user-select: none;
