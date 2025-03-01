@@ -14,7 +14,6 @@ export default function BusinessDescription() {
       (entries, observerInstance) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log("Div is in view!");
             const animator = new TextAnimator(target);
             animator.animate();
 

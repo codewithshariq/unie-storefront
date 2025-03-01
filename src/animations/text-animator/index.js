@@ -88,13 +88,13 @@ export class TextAnimator {
           opacity: 0,
         },
         {
-          duration: 0.02,
+          duration: 0.008,
           onStart: () => {
             // Set --opa to 1 at the start of the animation
             gsap.set(char, { "--opa": 1 });
           },
           onComplete: () => {
-            gsap.set(char, { innerHTML: initialHTML, delay: 0.02 });
+            gsap.set(char, { innerHTML: initialHTML, delay: 0.008 });
             completedAnimations++;
             // Check if all animations are complete
             if (
@@ -104,7 +104,7 @@ export class TextAnimator {
               onCompleteCallback();
             }
           },
-          repeat: 3,
+          repeat: 2,
           onRepeat: () => {
             repeatCount++;
             if (repeatCount === 1) {
@@ -113,8 +113,8 @@ export class TextAnimator {
             }
           },
           repeatRefresh: true,
-          repeatDelay: 0.04,
-          delay: (position + 1) * 0.05,
+          repeatDelay: 0.015,
+          delay: (position + 1) * 0.015,
           innerHTML: () =>
             lettersAndSymbols[
               Math.floor(Math.random() * lettersAndSymbols.length)
