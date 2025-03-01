@@ -10,15 +10,20 @@ import Image from "next/image";
 
 const TWEEN_FACTOR_BASE = 0.1;
 
-const IMAGES = [
-  "/images/Uniform1.png",
-  "/images/Uniform2.png",
-  "/images/Uniform4.png",
-  "/images/Uniform3.png",
-  "/images/Uniform4.png",
-];
+type image = {
+  src: string;
+  sku: string;
+};
 
-export const UniformCarousel = () => {
+interface UniformCarouselProps {
+  setActiveIndex: (index: number) => void;
+  images: image[];
+}
+
+export const UniformCarousel = ({
+  setActiveIndex,
+  images,
+}: UniformCarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: () => 100,
@@ -40,6 +45,8 @@ export const UniformCarousel = () => {
 
   const tweenScale = useCallback((emblaApi: EmblaCarouselType) => {
     const selectedIndex = emblaApi.selectedScrollSnap();
+    setActiveIndex(selectedIndex);
+
     tweenNodes.current.forEach((node, index) => {
       if (index === selectedIndex) {
         node.style.width = "362px";
@@ -70,11 +77,20 @@ export const UniformCarousel = () => {
     <div className={cn(styles.embla)}>
       <div className={cn(styles.embla__viewport)} ref={emblaRef}>
         <div className={cn(styles.embla__container)}>
-          {IMAGES.map((src, index) => (
-            <div key={index} className={cn(styles.embla__slide)}>
-              <Image src={src} alt={`Uniform ${index}`} fill sizes="28.28vw" />
-            </div>
-          ))}
+          {images.map((img, index) => {
+            const { src } = img;
+
+            return (
+              <div key={index} className={cn(styles.embla__slide)}>
+                <Image
+                  src={src}
+                  alt={`Uniform ${index}`}
+                  fill
+                  sizes="28.28vw"
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="flex gap-2 items-center absolute left-[86px] bottom-[-42px]">

@@ -12,10 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  UniformCarousel,
-  UniformCarouselWrapper,
-} from "@/components/uniform-carousel";
+import { UniformCarouselContainer } from "@/components/uniform-carousel";
 
 import Svg1 from "@/public/contact-section-1.svg";
 import Unifrom2 from "@/public/images/Uniform2.png";
@@ -98,9 +95,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <UniformCarouselWrapper>
-        <UniformCarousel />
-      </UniformCarouselWrapper>
+      <UniformCarouselContainer />
       <div className="flex flex-col my-[133px] items-center justify-center">
         <BusinessDescription />
       </div>

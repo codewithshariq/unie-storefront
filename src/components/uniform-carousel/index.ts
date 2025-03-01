@@ -1,2 +1,2 @@
 export * from "./uniform-carousel";
-export * from "./uniform-carousel-wrapper";
+export * from "./uniform-carousel-container";
