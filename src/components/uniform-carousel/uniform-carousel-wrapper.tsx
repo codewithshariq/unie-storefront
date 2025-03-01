@@ -12,9 +12,8 @@ export function UniformCarouselWrapper({
   children,
 }: UniformCarouselWrapperProps) {
   return (
-    <div className="relative my-10">
+    <div className="relative -mt-[248px]">
       <Image src={Svg1} alt="Svg 1" priority />
-      {/* <Svg1 /> */}
       <Svg2 className="absolute top-[35px] mx-[34px]" />
       <p className="font-normal text-2xl text-gray-200 font-spaceMono leading-[150%] tracking-[2.88px] uppercase absolute top-[25px] left-[304px]">
         un-1011001

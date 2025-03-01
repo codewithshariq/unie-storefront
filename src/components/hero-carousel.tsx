@@ -88,7 +88,7 @@ const HeroCarousel = () => {
   }, [emblaApi, tweenScale, setTweenFactor, setTweenNodes]);
 
   return (
-    <div className="embla w-full">
+    <div className="embla w-full blended-background">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {SLIDES.map((index) => (
