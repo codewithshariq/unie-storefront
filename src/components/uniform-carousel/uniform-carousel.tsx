@@ -64,7 +64,7 @@ export const UniformCarousel = () => {
       .on("reInit", tweenScale)
       .on("scroll", tweenScale)
       .on("slideFocus", tweenScale);
-  }, [emblaApi, tweenScale]);
+  }, [emblaApi, tweenScale, setTweenFactor, setTweenNodes]);
 
   return (
     <div className={cn(styles.embla)}>

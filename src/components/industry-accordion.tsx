@@ -59,10 +59,6 @@ const ACCORDIONS = [
 export default function IndustryAccordion() {
   const [selectedAccordionId, setSelectedAccordionId] = useState<number>(5);
 
-  const selectedAccordion = ACCORDIONS.find(
-    (accordion) => accordion.id === selectedAccordionId
-  );
-
   function handleAccordionClick(id: number) {
     setSelectedAccordionId(id);
   }
@@ -71,7 +67,7 @@ export default function IndustryAccordion() {
     <div className="relative flex items-end h-[511px] mx-auto mb-[75px]">
       <div className="absolute left-[332px] top-0 flex gap-3 items-center">
         <h2 className="font-mortendExtrabold text-[2rem] font-bold uppercase leading-[182%] tracking-[0.64px] text-brown-400">
-          // Built for all industries
+          {`// Built for all industries`}
         </h2>
         <DotRightIcon className="w-[98px] h-[6px] fill-brown-400" />
       </div>
