@@ -2,6 +2,7 @@ import BusinessDescription from "@/components/business-description";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import HeroCarousel from "@/components/hero-carousel";
+import IndustryAccordion from "@/components/industry-accordion";
 import { Button } from "@/components/ui/button";
 import {
   UniformCarousel,
@@ -32,6 +33,7 @@ export default function Home() {
       <div className="flex flex-col my-[133px] items-center justify-center">
         <BusinessDescription />
       </div>
+      <IndustryAccordion />
       <Footer />
     </div>
   );
