@@ -211,3 +211,7 @@ body {
   margin-right: 100px !important;
   margin-left: 100px !important;
 }
+
+.vertical-writing {
+  writing-mode: sideways-lr;
+}

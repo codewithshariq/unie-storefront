@@ -18,27 +18,27 @@ export default {
       },
       colors: {
         brown: {
-          500: "var(--brown-500)",
-          400: "var(--brown-400)",
+          "400": "var(--brown-400)",
+          "500": "var(--brown-500)",
         },
         black: {
-          700: "var(--black-700)",
-          500: "var(--black-500)",
-          300: "var(--black-300)",
+          "300": "var(--black-300)",
+          "500": "var(--black-500)",
+          "700": "var(--black-700)",
         },
         white: {
-          500: "var(--white-500)",
-          100: "var(--white-100)",
+          "100": "var(--white-100)",
+          "500": "var(--white-500)",
         },
         teal: {
-          700: "var(--teal-700)",
-          500: "var(--teal-500)",
+          "500": "var(--teal-500)",
+          "700": "var(--teal-700)",
         },
         green: {
-          500: "var(--green-500)",
+          "500": "var(--green-500)",
         },
         gray: {
-          200: "var(--gray-200)",
+          "200": "var(--gray-200)",
         },
         error: {
           DEFAULT: "var(--error)",
@@ -94,6 +94,28 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: {
+            width: "0",
+          },
+          to: {
+            width: "var(--radix-accordion-content-width)",
+          },
+        },
+        "accordion-up": {
+          from: {
+            width: "var(--radix-accordion-content-width)",
+          },
+          to: {
+            width: "0",
+          },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },

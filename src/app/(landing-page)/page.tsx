@@ -7,6 +7,12 @@ import IndustryAccordion from "@/components/industry-accordion";
 import Motivation from "@/components/motivation";
 import { UniformCarouselContainer } from "@/components/uniform-carousel";
 
+import SectionSeparator from "@/public/section-separator.svg";
+import {
+  AttributeAccordion,
+  AttributeAccordionContainer,
+} from "@/components/attribute-accordion";
+
 export default function Home() {
   return (
     <div className="relative flex flex-1 flex-col min-h-screen max-w-screen-xl mx-auto blended-background">
@@ -21,6 +27,12 @@ export default function Home() {
         <BusinessDescription />
       </div>
       <IndustryAccordion />
+      <div className="w-full">
+        <SectionSeparator className="fill-brown-400 w-[1280px] h-[168px] rotate-180" />
+        <AttributeAccordionContainer>
+          <AttributeAccordion />
+        </AttributeAccordionContainer>
+      </div>
       <Footer />
     </div>
   );
