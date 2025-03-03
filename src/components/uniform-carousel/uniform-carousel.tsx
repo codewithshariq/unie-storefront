@@ -87,6 +87,7 @@ export const UniformCarousel = ({
                   alt={`Uniform ${index}`}
                   fill
                   sizes="28.28vw"
+                  className="object-cover object-center"
                 />
               </div>
             );
