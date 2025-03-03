@@ -133,6 +133,7 @@ export default function IndustryAccordion() {
                           fill
                           alt={`Industry Image ${index + 1}`}
                           className="absolute object-cover"
+                          sizes="14vw"
                         />
                       </div>
                     ))}

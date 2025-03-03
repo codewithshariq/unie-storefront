@@ -33,7 +33,13 @@ export default function GetInTouch() {
       <div className="relative flex items-stretch z-10">
         <Svg1 className="flex-shrink-0" />
         <div className="relative w-[269px] h-full flex-shrink-0 rounded-r-[40px] overflow-hidden">
-          <Image src={Unifrom2} alt="Uniform" fill className="object-cover" />
+          <Image
+            src={Unifrom2}
+            alt="Uniform"
+            fill
+            className="object-cover"
+            sizes="22vw"
+          />
         </div>
         <div className="absolute top-5 left-4">
           <p className="font-mortendLight font-bold text-lg tracking-[0.36px] leading-[135%] uppercase text-black-700 mb-[21px]">{`// Get in Touch`}</p>
