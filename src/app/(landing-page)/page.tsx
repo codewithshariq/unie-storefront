@@ -2,7 +2,7 @@ import BusinessDescription from "@/components/business-description";
 import Footer from "@/components/footer";
 import GetInTouch from "@/components/get-in-touch";
 import Header from "@/components/header";
-import HeroCarousel from "@/components/hero-carousel";
+import HeroCarousel from "@/components/hero-carousel/hero-carousel";
 import IndustryAccordion from "@/components/industry-accordion";
 import Motivation from "@/components/motivation";
 import { UniformCarouselContainer } from "@/components/uniform-carousel";

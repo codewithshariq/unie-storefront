@@ -36,9 +36,9 @@ export default function BusinessDescription() {
   }, []);
 
   return (
-    <div className="flex flex-col w-full border border-brown-500 max-w-[989px]">
+    <div className="flex flex-col w-full border border-brown-400 max-w-[989px]">
       <div className="flex">
-        <div className="felx flex-shrink-0 items-center justify-center py-11 px-[1.125rem] border-r border-brown-500">
+        <div className="felx flex-shrink-0 items-center justify-center py-11 px-[1.125rem] border-r border-brown-400">
           <Globe className="w-20 h-20 animate-[spin_3s_linear_infinite] select-none" />
         </div>
         <p
@@ -55,8 +55,8 @@ export default function BusinessDescription() {
         </p>
       </div>
       <div className="flex h-[2.6875rem]">
-        <div className="flex-shrink-0 bg-brown-500 w-[117px]" />
-        <div className="w-full border-t border-brown-500" />
+        <div className="flex-shrink-0 bg-brown-400 w-[117px]" />
+        <div className="w-full border-t border-brown-400" />
       </div>
     </div>
   );

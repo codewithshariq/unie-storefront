@@ -6,6 +6,8 @@ import {
   EmblaOptionsType,
 } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
+import { useDotButton } from "./use-dot-button";
+import { cn } from "@/lib/utils";
 
 const TWEEN_FACTOR_BASE = 0.03;
 
@@ -30,6 +32,9 @@ const HeroCarousel = () => {
   const setTweenFactor = useCallback((emblaApi: EmblaCarouselType) => {
     tweenFactor.current = TWEEN_FACTOR_BASE * emblaApi.scrollSnapList().length;
   }, []);
+
+  const { selectedIndex, scrollSnaps, onDotButtonClick } =
+    useDotButton(emblaApi);
 
   const tweenScale = useCallback(
     (emblaApi: EmblaCarouselType, eventName?: EmblaEventType) => {
@@ -110,6 +115,18 @@ const HeroCarousel = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="flex items-center justify-end gap-2 mt-3">
+        {scrollSnaps.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => onDotButtonClick(index)}
+            className={cn(
+              "h-3 w-3 rounded-full border border-solid border-brown-400",
+              index === selectedIndex && "bg-brown-400"
+            )}
+          />
+        ))}
       </div>
     </div>
   );
