@@ -1,14 +1,14 @@
 "use client";
-import * as animationData from "@/lib/lottie/globe-lottie.json";
-import { LottieOptions, useLottie } from "lottie-react";
+import * as animationData from "@/public/globe-lottie.json";
+
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function AnimatedGlobe() {
-  const defaultOptions: LottieOptions = {
-    animationData,
-    loop: true,
-  };
-
-  const { View } = useLottie(defaultOptions);
-
-  return <div className="w-20 h-20 select-none">{View}</div>;
+  return (
+    <div className="w-20 h-20 select-none">
+      <Lottie animationData={animationData} loop />
+    </div>
+  );
 }
