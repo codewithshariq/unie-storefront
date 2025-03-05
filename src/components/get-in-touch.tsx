@@ -26,8 +26,8 @@ export default function GetInTouch() {
       <div className="flex flex-col gap-y-[17px] w-[541px] pt-5">
         <p className="font-mortendLight font-bold text-lg tracking-[0.36px] leading-[135%] uppercase text-black-700">{`// Bespoke Premium Quality Uniforms.`}</p>
         <p className="text-black-500 text-base tracking-[0.32px] leading-[150%]">
-          I need copy for this section. Something about the uniforms and the
-          quality of them and whatever else.
+          Fully custom, one-of-one, designed and engineered to meet your
+          company’s specific needs.
         </p>
       </div>
       <div className="relative flex items-stretch z-10">

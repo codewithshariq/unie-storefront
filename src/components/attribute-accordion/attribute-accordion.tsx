@@ -21,26 +21,38 @@ const ACCORDIONS = [
   {
     title: "Customizable",
     Icon: ZapierIcon,
+    description:
+      "Our world-class uniform solutions are fully customizable, allowing brands to create one-of-a-kind garments that seamlessly align with their identity, functionality needs, and performance expectations.",
   },
   {
     title: "Automated",
     Icon: AdjustmentIcon,
+    description:
+      "We leverage cutting-edge automation to streamline uniform production and inventory management, ensuring precision, consistency, and effortless scalability for every client.",
   },
   {
     title: "Affordable",
     Icon: DollarIcon,
+    description:
+      "We design to a price point that fits your budget without sacrificing quality, offering premium uniforms at competitive rates, along with interest-free financing to make outfitting your team even more accessible.",
   },
   {
     title: "On-Trend",
     Icon: TrendingIcon,
+    description:
+      "Our expert design team stays ahead of industry trends, crafting modern, fashion-forward uniforms that enhance brand image while maintaining peak functionality.",
   },
   {
     title: "Less Waste",
     Icon: RecycleIcon,
+    description:
+      "By utilizing advanced sizing software to reduce excess inventory and implementing recycling programs for sustainable garment use, we minimize waste and optimize resources, ensuring a more efficient and eco-conscious uniform solution.",
   },
   {
     title: "Retention",
     Icon: UserCheckIcon,
+    description:
+      "Thoughtfully designed, comfortable, and professional uniforms empower teams, fostering a sense of pride and belonging that enhances employee satisfaction and long-term retention. When employees feel appreciated and part of a unified tribe, they are more engaged, motivated, and committed to their work.",
   },
 ];
 
@@ -60,7 +72,7 @@ export function AttributeAccordion() {
       value={activeAccordion}
     >
       {ACCORDIONS.map((accordion, index) => {
-        const { title, Icon } = accordion;
+        const { title, Icon, description } = accordion;
         const isFirst = index === 0;
         const isLast = index === ACCORDIONS.length - 1;
         const isActive = activeAccordion === title;
@@ -126,10 +138,7 @@ export function AttributeAccordion() {
                 </div>
               </div>
               <p className="font-spaceMono text-base text-white-100 w-[793px]">
-                Our world-class uniform solutions are fully customizable,
-                allowing brands to create one-of-a-kind garments that seamlessly
-                align with their identity, functionality needs, and performance
-                expectations.
+                {description}
               </p>
             </AccordionContent>
           </AccordionItem>
