@@ -27,34 +27,31 @@ const ACCORDIONS = [
     id: 1,
     title: "Medical",
     Icon: MedicalIcon,
-    description: `The medical industry unites skilled practitioners, advanced research centers, and modern facilities to deliver patient care, drive innovative treatments, and improve health outcomes worldwide.`,
+    description: `We understand the rigorous demands of the medical field and the need for uniforms that offer durability, comfort, and functionality. Our medical uniforms are engineered with innovative fabrics, moisture-wicking technology, and strategic design features to ensure all-day comfort.`,
   },
   {
     id: 2,
     title: "Hospitality",
     Icon: HospitalityIcon,
-    description: `The hospitality industry encompasses a wide range of businesses and services that cater to travelers and guests, including hotels, restaurants, resorts, and more.`,
+    description: `The hospitality industry is built on service, and long hours on your feet demanding uniforms that are both functional and refined. Our hospitality uniforms are designed with premium fabrics, tailored fits, and thoughtful details that enhance both comfort and confidence.`,
   },
   {
     id: 3,
     title: "Entertainment",
     Icon: EntertainmentIcon,
-    description: `The entertainment industry encompasses a diverse range of businesses and services that cater to the cultural and recreational needs of individuals and communities.`,
+    description: `In the events and entertainment industry, uniforms need to do more than just perform they need to make a statement. Our event and entertainment uniforms strike the perfect balance between function and fashion, ensuring teams look polished, and represent their brand with style.`,
   },
   {
     id: 4,
     title: "Government",
     Icon: GovernmentIcon,
-    description: `The government sector encompasses the various levels of government, including local, state, and federal, and their respective agencies and departments.`,
+    description: `For city, town, and municipal workers, uniforms need to be built for durability, and a professional appearance. Our government uniforms are designed with performance and longevity in mind, ensuring public servants are equipped with reliable attire.`,
   },
   {
     id: 5,
     title: "Service",
     Icon: ServiceIcon,
-    description: `The service workforce comprises millions of individuals worldwide,
-            spanning various industries such as hospitality, retail,
-            transportation, and more, making it one of the largest and most
-            diverse sectors of the global economy.`,
+    description: `The service industry demands uniforms that can withstand labor-intensive work while maintaining a sharp, professional look. Our service industry uniforms blend rugged functionality with stylish, modern touches—ensuring teams not only perform at their best but also elevate the brand.`,
   },
 ];
 
