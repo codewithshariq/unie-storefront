@@ -12,6 +12,7 @@ import {
   AttributeAccordion,
   AttributeAccordionContainer,
 } from "@/components/attribute-accordion";
+import GarmentsSection from "@/components/garments-section";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <IndustryAccordion />
       <div className="w-full">
         <SectionSeparator className="fill-brown-400 w-[1280px] h-[168px] rotate-180" />
+        <GarmentsSection />
         <AttributeAccordionContainer>
           <AttributeAccordion />
         </AttributeAccordionContainer>
