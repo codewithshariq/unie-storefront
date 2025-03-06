@@ -60,6 +60,12 @@ export default function IndustryAccordion() {
 
   return (
     <div className="relative flex items-end h-[511px] mx-auto mb-[75px]">
+      <div className="absolute top-0 left-[332px] flex gap-3 items-center">
+        <h2 className="font-mortendExtrabold text-[2rem] font-bold uppercase leading-[182%] tracking-[0.64px] text-brown-400">
+          {`// Built for all industries`}
+        </h2>
+        <DotRightIcon className="w-[98px] h-[6px] fill-brown-400" />
+      </div>
       <Accordion
         type="single"
         collapsible
@@ -76,6 +82,9 @@ export default function IndustryAccordion() {
           const isFirst = index === 0;
           const isLast = index === ACCORDIONS.length - 1;
           const isActive = activeAccordion === title;
+          const activeAccordionIndex = ACCORDIONS.findIndex(
+            (accordion) => accordion.title === activeAccordion
+          );
 
           return (
             <AccordionItem
@@ -87,7 +96,10 @@ export default function IndustryAccordion() {
                 className={cn(
                   "relative flex flex-col justify-between items-center h-full w-[51px] border border-brown-400 pt-4 pb-6 px-[11px] hover:no-underline data-[state=open]:w-[82px] data-[state=open]:text-black-500 data-[state=open]:font-semibold data-[state=open]:border-none data-[state=open]:items-start  [&[data-state=open]>svg]:rotate-0",
                   isFirst && "rounded-l-[20px]",
-                  isLast && "rounded-r-[20px]"
+                  isLast && "rounded-r-[20px]",
+                  !isActive &&
+                    index > activeAccordionIndex &&
+                    "h-[432px] self-end"
                 )}
               >
                 {isActive && (
@@ -103,12 +115,6 @@ export default function IndustryAccordion() {
                 <Icon className={cn("fill-current", isActive && "mr-[13px]")} />
               </AccordionTrigger>
               <AccordionContent className="pb-0 relative flex items-end w-[873px] h-full mr-4">
-                <div className="absolute top-0 left-[59px] flex gap-3 items-center">
-                  <h2 className="font-mortendExtrabold text-[2rem] font-bold uppercase leading-[182%] tracking-[0.64px] text-brown-400">
-                    {`// Built for all industries`}
-                  </h2>
-                  <DotRightIcon className="w-[98px] h-[6px] fill-brown-400" />
-                </div>
                 <div key={index} className={cn("relative flex flex-shrink-0")}>
                   <Svg1 />
                   <div className="absolute left-[27px] top-0 flex items-center border-b border-solid border-brown-400 h-[124px]">
